@@ -1,0 +1,121 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #16395c;
+    padding: 10px 40px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: #d4eaf7;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.nav-left a {
+    margin-right: 20px;
+}
+
+.nav-right a {
+    background: #1f4e79;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.nav-right a:hover {
+    background: #0e2b4c;
+}
+
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+section h2 {
+    color: #1f4e79;
+    margin-bottom: 15px;
+}
+
+section p, section ul {
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.car-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.car-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.car-card h3 {
+    color: #1f4e79;
+    margin: 15px 0 5px;
+}
+
+.car-card p {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.car-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #1f4e79;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.car-card a:hover {
+    background: #16395c;
+}
+
+.navbar .active {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+}
